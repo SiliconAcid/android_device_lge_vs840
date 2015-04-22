@@ -1,3 +1,7 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),vs840)
-include $(call first-makefiles-under,$(call my-dir))
+ifneq ($(filter vs840,$(TARGET_DEVICE)),)
+
+LOCAL_PATH := $(call my-dir)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 endif

@@ -1,15 +1,10 @@
-# inherit from the proprietary version
--include vendor/lge/vs840/BoardConfigVendor.mk
+include device/lge/iprj-common/BoardConfigCommon.mk
 
--include device/lge/iprj-common/BoardConfigCommon.mk
+TARGET_KERNEL_CONFIG := i_vzw_defconfig
 
-TARGET_BOOTLOADER_BOARD_NAME := vs840
 TARGET_OTA_ASSERT_DEVICE := vs840
 
-# Try to build the kernel
-TARGET_KERNEL_CONFIG := lucid_defconfig
-# Keep this as a fallback
-TARGET_PREBUILT_KERNEL := device/lge/vs840/kernel
+I_DTS_TARGET := msm8660-perf_defconfig
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/vs840/bluetooth
 TARGET_RECOVERY_FSTAB = device/lge/vs840/fstab.iprj
