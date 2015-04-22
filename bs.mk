@@ -3,19 +3,19 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/apns-conf.xml:system/etc/apns-conf.xml
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/beanstalk/config/cdma.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 800
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/vs840/vs840.mk)
 
-PRODUCT_NAME := cm_vs840
+PRODUCT_NAME := bs_vs840
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := Lucid
