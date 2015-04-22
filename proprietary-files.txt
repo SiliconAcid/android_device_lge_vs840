@@ -1,6 +1,5 @@
 lib/hw/sensors.msm8660.so
 etc/firmware/vidc_1080p.fw
-etc/firmware/BCM4330B14.hcd
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
@@ -14,7 +13,6 @@ etc/firmware/yamato_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 lib/libC2D2.so
-lib/libc2d2_z180.so
 lib/libOpenVG.so
 lib/libgsl.so
 lib/libsc-a2xx.so
@@ -22,7 +20,6 @@ bin/rmt_storage
 bin/qmuxd
 bin/qmiproxy
 bin/netmgrd
-bin/qrngd
 bin/rild
 bin/qcks
 bin/ks
@@ -53,7 +50,6 @@ lib/libaudioalsa.so
 lib/libaudcal.so
 lib/libacdbmapper.so
 lib/libacdbloader.so
-lib/liba2dp.so
 lib/libmmjps.so
 lib/libmmjpeg.so
 lib/libmmipl.so
