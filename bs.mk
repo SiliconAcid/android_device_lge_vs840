@@ -1,6 +1,6 @@
 # Boot animation
-TARGET_SCREEN_HEIGHT := 480
-TARGET_SCREEN_WIDTH := 800
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
@@ -9,7 +9,7 @@ $(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 $(call inherit-product, vendor/beanstalk/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lge/vs840/vs840.mk)
+#$(call inherit-product, device/lge/vs840/vs840.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs840
